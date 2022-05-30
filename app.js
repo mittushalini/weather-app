@@ -1,8 +1,8 @@
 const path = require('path')
 const express = require('express')
 const hbs = require('hbs')
-const temp = require('../functions/temp.js')
-const geocode = require('../functions/geocode.js')
+const temp = require('/functions/temp.js')
+const geocode = require('/functions/geocode.js')
 const { response } = require('express')
 require('http')
 
