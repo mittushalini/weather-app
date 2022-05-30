@@ -6,6 +6,7 @@ const geocode = require('../functions/geocode.js')
 const { response } = require('express')
 
 const app = express()
+const port = process.env.PORT || 3000
 const PublicDirPath = path.join(__dirname, '/public')
 const ViewsDirPath = path.join(__dirname, '/public/views')
 const PartialsDirPath = path.join(__dirname, '/public/partials')
@@ -91,6 +92,6 @@ app.get('*', (req, res) => {
 
     })
 })
-app.listen(3000, () => {
-    console.log('server is up on 3000')
+app.listen(port, () => {
+    console.log('server is up on' + port)
 })
